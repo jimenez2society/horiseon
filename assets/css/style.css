@@ -1,14 +1,15 @@
+/* CSS global reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
-
+/* SETTING BODY BACKGROUND COLOR */
 body {
   background-color: #d9dcd6;
 }
-
+/* Giving the header padding, background-color apart from the body, AND using font-family in a "FALLBACK" systematic way */
 .header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -16,16 +17,16 @@ body {
   background-color: #2a607c;
   color: #ffffff;
 }
-
+/* made the nav logo to be an inline-element. Allowing it to container only min-content instead of a being a block but still allowing to add sizing styles */
 .header h1 {
   display: inline-block;
   font-size: 48px;
 }
-
+/* emphasizing the "seo" in horiseon by giving it a slightly different color */
 .header h1 .seo {
   color: #d9dcd6;
 }
-
+/* allowing the nav to float in the right direction inside of the header while also giving it a margin-right so it has a little more space between the edge of the screen and the nav. Giving a font-size and font-family for the child elements to inherit */
 .header nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -33,25 +34,29 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
-
+/* this will get rid of the bullet points on the list items */
 .header nav ul {
   list-style-type: none;
 }
-
-.header nav ul li {
-  display: inline-block;
+/* this gives all the list items except the first child a margin-left of 25px */
+.header nav ul li:not(:first-child) {
   margin-left: 25px;
 }
-
+/* this allows all list items to be horizontal instead of vertical */
+.header nav ul li {
+  display: inline-block;
+}
+/* getting rid of the underline and setting color to white on all of the a tags */
 a {
   color: #ffffff;
   text-decoration: none;
 }
-
+/* setting font-size of 16px on all paragraphs */
 p {
   font-size: 16px;
 }
 
+/* giving a set height to the hero and width 100% of the parent element. With a background-image added and setting it to cover and allowing the image to be centered  */
 .hero {
   height: 800px;
   width: 100%;
@@ -60,23 +65,23 @@ p {
   background-size: cover;
   background-position: center;
 }
-
+/* creating a custom class that floats an item to the left with a margin to the right */
 .float-left {
   float: left;
   margin-right: 25px;
 }
-
+/* creating a custom class that floats an item to the right with a margin to the left */
 .float-right {
   float: right;
   margin-left: 25px;
 }
-
+/* giving the main content a width of 75% and a margin left of 20px so its not sitting on the edge of the screen */
 .content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
 }
-
+/* giving the aside content a width of 20% and a margin right of 20px so its not sitting on the edge of the screen and that its even with the main content  */
 .benefits {
   margin-right: 20px;
   padding: 20px;
@@ -87,22 +92,24 @@ p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #2589bd;
 }
-
+/* giving each benefit a margin-bottom of 32px so that there is some spacing between the each of them and a color of white */
 .benefit {
   margin-bottom: 32px;
   color: #ffffff;
 }
+
+/* giving the benifit titles a margin-bottom and centering the text to give the benefits a more clean look with white spacing */
 .benefit h3 {
   margin-bottom: 10px;
   text-align: center;
 }
-
+/* giving the benefit image a max-width of 150px and margin top and bottom of 10px. setting left and right maring to auto so that the image centers */
 .benefit img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
-
+/* consolidated all of these sections that have the same properties into one block of code */
 .search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
@@ -113,21 +120,20 @@ p {
   background-color: #0072bb;
   color: #ffffff;
 }
-
+/* consolidated all of these imgs that have the same properties into one block of code */
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {
   max-height: 200px;
 }
-
+/* consolidated all of these h2  that have the same properties into one block of code */
 .search-engine-optimization h2,
 .online-reputation-management h2,
 .social-media-marketing h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
-
-
+/* giving the footer an all around padding of 30px and aligning all the text to the center */
 .footer {
   padding: 30px;
   clear: both;
@@ -135,7 +141,7 @@ p {
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
-
+/* giving the h2 inside of the footer a font-size of 20px */
 .footer h2 {
   font-size: 20px;
 }

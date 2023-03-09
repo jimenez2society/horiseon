@@ -1,4 +1,4 @@
-/* CSS global reset */
+/* CSS global reset 1 */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -120,7 +120,7 @@ p {
   background-color: #0072bb;
   color: #ffffff;
 }
-/* consolidated all of these imgs that have the same properties into one block of code */
+/* consolidated all of these imgs that have the same properties into one block of code  */
 .search-engine-optimization img,
 .online-reputation-management img,
 .social-media-marketing img {

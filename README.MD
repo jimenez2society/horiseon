@@ -24,3 +24,7 @@
 
 - **CSS code** needs to be changed to adapt to the newly implemented HTML code
 - Alot of CSS code is being repeated so I refactored it to reduce the code that was used
+
+## Screenshot of application | Horiseon
+
+![Screenshot of the horiseon project](./assets//images/01-html-css-git-homework-demo.png)
